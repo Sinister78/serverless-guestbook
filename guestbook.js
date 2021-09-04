@@ -1,13 +1,13 @@
 /**
  * Web application
  */
-const apiUrl = '';
+const apiUrl = 'https://499f2840.us-south.apigw.appdomain.cloud/guestbook';
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
     return $.ajax({
       type: 'GET',
-      url: `https://499f2840.us-south.apigw.appdomain.cloud/guestbook/entries`,
+      url: `${apiUrl}/entries`,
       dataType: 'json'
     });
   },
